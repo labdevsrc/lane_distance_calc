@@ -14,9 +14,20 @@ The repository includes:
 # Get Started
 
 ## Environment
-Working environment : [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base) , CuDNN 7.6.5, Tensorflow 2.1.0, Keras 2.2.5.
-Below combination known to worked with Tensorflow 1.x : CUDA 10.0 , CuDNN 7.4, Tensorflow 1., Keras 2.2.5.
+Working environment : 
+* [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base) 
+  ![Windows environment](assets/win10_env_CUDA101.png)
+  CUDA_PATH = programfiles_path\NVIDIA GPU Computing Toolkit\CUDA\v10.1
+* CuDNN 7.6.5 
+* Tensorflow 2.1.0
+* Keras 2.2.5.
 
+Below combination known to worked with Tensorflow 1.x : 
+* [CUDA 10.0](https://developer.nvidia.com/cuda-10.0-download-archive) 
+* CuDNN 7.4.x
+* Tensorflow 1.15 (Tensorflow 1.18 known has issue)
+* Keras 
+ 
 ## Training Preparation
 In case we want to add more training image to increase accuracy or change segmentation object (ex : storm drain, arrow, pole ), just follow below step.   
 * /images/train : folder for storing training images and annotation files
