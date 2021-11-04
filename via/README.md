@@ -12,9 +12,9 @@ and released under the BSD-2 clause [license](https://gitlab.com/vgg/via/blob/ma
 which allows it to be useful for both academic projects and commercial applications.
 
 ## Screenshots
-<img src="/screenshots/via_demo_screenshot2_via-2.0.2.jpg" alt="Screenshot showing basic image annotation" title="Screenshot showing basic image annotation" height="370">
-<img src="/screenshots/via_face_demo_screenshot4.jpg" alt="Screenshot of VIA being used for face annotation" title="Screenshot of VIA being used for face annotation" height="370">
-<img src="/screenshots/via_face_track_demo_screenshot1.jpg" alt="Screenshot of VIA being used for face track annotation" title="Screenshot of VIA being used for face track annotation" height="370">
+<img src="/screenshot/via_demo_screenshot2_via-2.0.2.jpg" alt="Screenshot showing basic image annotation" title="Screenshot showing basic image annotation" height="370">
+<img src="/screenshot/via_face_demo_screenshot4.jpg" alt="Screenshot of VIA being used for face annotation" title="Screenshot of VIA being used for face annotation" height="370">
+<img src="/screenshot/via_face_track_demo_screenshot1.jpg" alt="Screenshot of VIA being used for face track annotation" title="Screenshot of VIA being used for face track annotation" height="370">
 
 ## Demo
 We have created self contained demo to illustrate the usage of VIA. These demo
