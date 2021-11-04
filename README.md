@@ -73,7 +73,9 @@ WEIGHTS_PATH = os.path.join(ROOT_DIR, "mask_rcnn_name_030.h5")  # trained weight
 # Step by Step Detection
 
 ## 1. Create ROI through MaskRCNN segmentation on White Line and Yellow Line 
-Do image segmentation on White and Yellow line. Define the area as ROI 
+Do image segmentation on White and Yellow line. Define the masked area as ROI. Green mask is white line ROI.
+Yellow mask is yellow line ROI.
+This masked area will be  input to next line detection. 
 ![](assets/layer1.png)
 
 ## 2. Horizontal Geometry and Hough Lines on ROI
