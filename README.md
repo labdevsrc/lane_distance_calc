@@ -28,7 +28,7 @@ In case we want to add more training image to increase accuracy or change segmen
 * [/images/train/via_region_data.json](/images/train/via_region_data.json) : Exported annotation from VIA VGG Image Annotator
 ![Get via region data](assets/export%20annotation.png)
 
-* In case object class num changed, inside CustomConfig & CustomDataset class , modify object class :
+* [runmodel.py, start_training.bat](samples/runmodel.py) In case object class num changed, inside CustomConfig & CustomDataset class , modify object class :
 ```bash
 class CustomConfig(Config):
     ....
@@ -47,7 +47,7 @@ class CustomDataset(utils.Dataset):
 
 ## Run Training 
 
-* [runmodel.py, start_training.bat](samples/main.py),  start_training.bat is batch file that invoke runmodel.py and address train image older 
+* [runmodel.py, start_training.bat](start_training.bat),  start_training.bat is batch file that invoke runmodel.py and address train image older 
 * on Windows command prompt type below: 
     ```bash
     start_training
