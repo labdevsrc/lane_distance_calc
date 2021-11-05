@@ -29,10 +29,11 @@ Below combination known to worked with Tensorflow 1.x :
  
 ## Training Preparation
 In case we want to add more training image to increase accuracy or change segmentation object (ex : storm drain, arrow, pole ), just follow below step.   
-* /images/train : folder for storing training images and annotation files
-* /images/val : folder for validation images
-
-* Image Annotation with [VGG VIA](https://www.robots.ox.ac.uk/~vgg/software/via/) tools (local)
+1. /images/train : folder for storing training images and annotation files
+2. /images/val : folder for validation images
+3. Set attributes regions as bellow :
+![Region Attributes](assets/region_attributes.png)
+4. Image Annotation with [VGG VIA](https://www.robots.ox.ac.uk/~vgg/software/via/) tools (local)
 ![Annotation sample](assets/annotation.png)
 
 * [/images/train/via_region_data.json](/images/train/via_region_data.json) : Exported annotation from VIA VGG Image Annotator
@@ -55,7 +56,7 @@ class CustomDataset(utils.Dataset):
         self.add_class("name", 6, "fence") # must be same with NUM_CLASSES
 ```
 
-## Run Training 
+## Run Training and output weight file
 
 * [runmodel.py, start_training.bat](start_training.bat),  start_training.bat is batch file that invoke runmodel.py and address train image older 
 * on Windows command prompt type below: 
