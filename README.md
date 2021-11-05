@@ -31,15 +31,19 @@ Below combination known to worked with Tensorflow 1.x :
 In case we want to add more training image to increase accuracy or change segmentation object (ex : storm drain, arrow, pole ), just follow below step.   
 1. /images/train : folder for storing training images and annotation files
 2. /images/val : folder for validation images
-3. Set attributes regions as bellow :
+3. Set attributes regions as bellow 
+
 ![Region Attributes](assets/region_attributes.png)
-4. Image Annotation with [VGG VIA](https://www.robots.ox.ac.uk/~vgg/software/via/) tools (local)
+
+4. Image Annotation with [VGG VIA](https://www.robots.ox.ac.uk/~vgg/software/via/) tools. Open [via.html](via/via.html) on the browser to open VGG VIA locally
+
 ![Annotation sample](assets/annotation.png)
 
-* [/images/train/via_region_data.json](/images/train/via_region_data.json) : Exported annotation from VIA VGG Image Annotator
+5. [/images/train/via_region_data.json](/images/train/via_region_data.json) : Exported annotation from VIA VGG Image Annotator
+
 ![Get via region data](assets/export%20annotation.png)
 
-* [runmodel.py, start_training.bat](samples/runmodel.py) In case object class num changed, inside CustomConfig & CustomDataset class , modify object class :
+6. [runmodel.py, start_training.bat](samples/runmodel.py) In case object class num changed, inside CustomConfig & CustomDataset class , modify object class :
 ```bash
 class CustomConfig(Config):
     ....
