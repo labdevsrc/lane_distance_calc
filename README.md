@@ -18,8 +18,8 @@ Working environment :
 * [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base) , set CUDA_PATH = programfiles_path\NVIDIA GPU Computing Toolkit\CUDA\v10.1
   ![Windows environment](assets/win10_env_CUDA101.png)
 * CuDNN 7.6.5 
-* Tensorflow 2.1.0
-* Keras 2.2.5.
+* Tensorflow 2.1.0 
+* Keras 2.2.5.(due to compatibility issue, suggested to use internal keras module from tensorflow)
 
 Below combination known to worked with Tensorflow 1.x : 
 * [CUDA 10.0](https://developer.nvidia.com/cuda-10.0-download-archive) 
